@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        body {
+          background-color: #f8f9fa;
+        }
+    
+        .container {
+          margin-top: 50px;
+        }
+    
+        .card {
+          border: none;
+          border-radius: 10px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+    
+        .card-header {
+          background-color: #007bff;
+          color: #fff;
+          text-align: center;
+          border-bottom: none;
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+        }
+    
+        .card-body {
+          padding: 30px;
+        }
+    
+        .btn-mark {
+          border-radius: 25px;
+        }
+    
+        #attendanceTable {
+          margin-top: 20px;
+        }
+      </style>
+    </head>
+    
+    <body>
+    <div><label for="">Date</label><input type="date" style="margin-left: 30px; margin-top: 50px;">
+      <label for="" style="margin-left: 20px;">Subject</label>
+      <input type="text">
+    </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card">
+              <div class="card-header">
+                <h3>Mark Attendance</h3>
+              </div>
+              <div class="card-body">
+                <form id="attendanceForm">
+                  <table class="table table-bordered" id="attendanceTable">
+                    <thead>
+                      <tr>
+                        <th>Student Name</th>
+                        <th>Attendance</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <!-- Student attendance fields will be populated here dynamically using JavaScript -->
+                    </tbody>
+                  </table>
+                  <button type="submit" class="btn btn-primary btn-block btn-mark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </body>
+      </html>
+    
